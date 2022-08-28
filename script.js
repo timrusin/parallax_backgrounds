@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 800;
 const CANVAS_HEIGHT = canvas.height = 700;
-let gameSpeed = 1;
+let gameSpeed = 5;
 
 const backgroundLayer1 = new Image();
 backgroundLayer1.src = './images/layer-1.png';
@@ -43,11 +43,11 @@ class Layer {
     }
 }
 
-const Layer1 = new Layer(backgroundLayer1, .25);
-const Layer2 = new Layer(backgroundLayer2, .25);
-const Layer3 = new Layer(backgroundLayer3, 2);
-const Layer4 = new Layer(backgroundLayer4, 3);
-const Layer5 = new Layer(backgroundLayer5, 5);
+const Layer1 = new Layer(backgroundLayer1, 0.2);
+const Layer2 = new Layer(backgroundLayer2, 0.4);
+const Layer3 = new Layer(backgroundLayer3, 0.6);
+const Layer4 = new Layer(backgroundLayer4, 0.8);
+const Layer5 = new Layer(backgroundLayer5, 1);
 
 const gameObjects = [Layer1, Layer2, Layer3, Layer4, Layer5];
 
