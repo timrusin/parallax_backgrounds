@@ -25,7 +25,7 @@ window.addEventListener('load',function(){
         gameSpeed = e.target.value;
         showGameSpeed.innerHTML = e.target.value;
     })
-    
+
     class Layer {
         constructor(image, speedModifier){
             this.x = 0;
@@ -70,3 +70,7 @@ window.addEventListener('load',function(){
     
     animate();  
 })
+
+
+//class two complete
+//https://www.youtube.com/watch?v=GFO_txvwK_c&t=1600s
